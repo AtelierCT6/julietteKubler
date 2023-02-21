@@ -1,0 +1,137 @@
+/* intro part */
+
+.intro {
+  display: flex;
+  padding: 3% 5% 5% 10%;
+  /* margin-bottom: 4%; */
+}
+
+.intro h1 {
+  margin-bottom: 5%;
+}
+
+.introDetails {
+  width: 70%;
+}
+.introDetails h1{
+  margin-bottom: 0;
+}
+
+.introDetails h2{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.introDetails p {
+  padding: 3% 10% 3% 20% ;
+  background-color: #fcb5ac;
+  transform: translateX(-20%);
+  border-radius: 0 5% 5% 0;
+}
+
+.introImg {
+  width: 40%;
+  z-index: -1;
+  border-radius: 20% 0 0 20% ;
+  overflow: hidden;
+  transform: translateY(20%); 
+}
+
+.introImg img {
+  width: 100%;
+}
+
+@media (max-width: 32rem){
+  .intro {
+    flex-direction: column-reverse;
+    margin-top: 10%;
+  }
+
+  .introImg {
+    width: 90%;
+    transform: translateY(-5%);
+    border-radius: 0;
+
+  }
+  .introImg img {
+    width: 95%;
+    height: 95%;
+    box-shadow: 5px 5px 10px rgb(111, 103, 103);
+  }
+
+  .introDetails {
+    width: 100%;
+  }
+  .introDetails h1 {
+    font-size: 1.6rem;
+  }
+  .introDetails h2 {
+    font-size: 1.4rem;
+  }
+  .introDetails p {
+    font-size: 1.2rem;
+  }
+}
+
+/* massage part */
+
+.massages {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.massage1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.massage2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 4%;
+}
+
+.card div {
+  display: flex;
+}
+
+.card p {
+ font-size: 1.2rem;
+ margin-left: 2%;
+}
+
+.card h3 {
+  margin-bottom: 2%;
+}
+
+.tarifs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.tarifs p {
+  margin-left: 3%;
+}
+
+.kobido {
+  display: flex;
+  margin: 4%;
+  justify-content: center;
+}
+
+@media (max-width: 32rem){
+  .massage1, .massage2, .card div {
+    flex-direction: column;
+  }
+  .card {
+    width: 90%;
+  }
+}

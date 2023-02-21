@@ -1,0 +1,57 @@
+ /* HEADING AREA */
+
+ header {
+	height: 180px;
+	padding: 0 3rem;
+	background: #ededed;
+	display: flex;
+  }
+  
+  #logo {
+	height: 180px;
+	margin-right: 15%;
+  }
+	
+	#logo img{
+		height: 100%;
+	}
+
+  header div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+  }
+  
+  header div h3 {
+	display: none;
+  }
+  
+  header p {
+	font-size: 2rem;
+	margin-bottom: 0;
+  }
+  
+  header div img {
+	height: 25px;
+  }
+
+	.nav {
+		display: none;
+	}
+
+	@media (max-width: 32rem){
+		header {
+			padding: 0;
+		}
+		#logo {
+			margin: 0;
+			margin-right: 10%;
+		}
+		.pcheader {
+			display: none;
+		}
+		.nav {
+			display: flex;
+		}
+	}
