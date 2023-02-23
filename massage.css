@@ -41,7 +41,7 @@
   width: 100%;
 }
 
-@media (max-width: 32rem){
+@media (max-width:57rem){
   .intro {
     flex-direction: column-reverse;
     margin-top: 10%;
@@ -127,7 +127,7 @@
   justify-content: center;
 }
 
-@media (max-width: 32rem){
+@media (max-width: 57rem){
   .massage1, .massage2, .card div {
     flex-direction: column;
   }

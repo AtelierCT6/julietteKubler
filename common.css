@@ -59,7 +59,7 @@ footer{
 	  flex-direction: column;
   }
   
-  @media (max-width: 32rem){
+  @media (max-width: 57rem){
 	footer{
 	  height: auto;
 	  align-items: center;
