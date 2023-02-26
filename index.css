@@ -40,9 +40,20 @@ header {
 
 .nav {
     width: 65%;
-    padding: 5%;
+    padding: 3%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav div {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.nav a {
+  height: 30px;
 }
 
 #mobile {
@@ -50,7 +61,7 @@ header {
 }
 
 .nav a:hover {
-  padding-bottom: 30px;
+  /* padding-bottom: 3%; */
   border-bottom: 1px solid #25232B;
 } 
 
@@ -72,18 +83,23 @@ header {
 @media (max-width: 57rem) {
 	header {
 	  padding: 0;
+    height: 200px;
 	}
 	#logo {
 	  margin: 0;
 	}
   .nav {
     flex-direction: column;
-    justify-content: space-around;
-    transform: translateY(30%);
+    /* padding: 3% 2%; */
+    justify-content: space-between;
+    /* transform: translateY(30%); */
+  }
+  .nav div {
+    flex-direction: column;
   }
   .nav a:hover {
     padding-bottom: 0;
-    border-bottom: 0px solid #25232B;
+    border-bottom: 0;
   } 
   #mail {
     display: none;

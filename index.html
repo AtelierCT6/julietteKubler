@@ -30,10 +30,17 @@
         <h3>Contactez-moi</h3>
       </div> -->
       <div class="nav">
-            <a href="./sophrologie.html">Sophrologie</a>
-            <a href="./massage.html"> Massages</a>
-            <a id="mail" href="mailto:juliettenicol@gmail.com">Contactez-moi</a>
-            <a id="mobile" href="tel:0603213233">Contactez-moi</a>
+        <div>
+          <a href="./sophrologie.html">Sophrologie</a>
+          <a href="./sophrologie_Enfants.html">Sophrologie pour Enfants</a>
+        </div>
+        <br>
+        <div>
+          <a href="./massage.html"> Massages</a>
+          <a href="./art_therapie.html"> Art Thérapie</a>
+          <a id="mail" href="mailto:juliettenicol@gmail.com">Contactez-moi</a>
+          <a id="mobile" href="tel:0603213233">Contactez-moi</a>
+        </div>
     </div>
     </header>
     <main>
@@ -110,14 +117,13 @@
     <footer>
       <div class="horaires">
         <p style="text-decoration: underline;">HORAIRES :</p>
-        <h4><time>Lundi de 10 heures à 19 heures</time></h4>
-        <h4><time>Mardi de 10 heures à 19 heures</time></h4>
-        <h4><time>Mercredi de 10 heures à 19 heures</time></h4>
-        <h4><time>Jeudi de 10 heures à 19 heures</time></h4>
-        <h4><time>Vendredi de 10 heures à 19 heures</time></h4>
+        <h4><time>Mardi de 9 heures à 19 heures</time></h4>
+        <h4><time>Jeudi de 9 heures à 19 heures</time></h4>
+        <h4><time>Vendredi de 9 heures à 19 heures</time></h4>
+        <h4><time>Samedi de 9 heures à 19 heures</time></h4>
       </div>
       <div class="address">
-        <p style="text-decoration: underline;">ADDRESSE :</p>
+        <p style="text-decoration: underline;">ADRESSE :</p>
         <div><p><address>6 Avenue Durandy "Les Capucines"</address></p>
         <p><address>06200 NICE</address></p></div>
         <p>Parking Gratuit</p>
@@ -132,6 +138,29 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </footer>
-    <script src="script.js"></script>
+    <script>
+      let container = document.querySelector(".banner")
+      let imgBox = document.querySelector(".img_box");
+
+      let index = 0;
+      let timer;
+
+      timer = setInterval(()=>{
+        if (index >= 4) {
+              index = 4;
+              imgBox.style.transition = 'all linear 1.5s';
+              imgBox.style.left = -index * 300 + 'px';
+              setTimeout(()=> {
+                  index = 0;
+                  imgBox.style.transition = 'none';
+                  imgBox.style.left = -index * 300 + 'px';
+              }, 1500)
+          } else {
+              index++;
+              imgBox.style.transition = 'all linear 1.5s';
+              imgBox.style.left = -index * 300 + 'px';
+          }
+      }, 2000);
+    </script>
   </body>
 </html>

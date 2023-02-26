@@ -1,0 +1,191 @@
+main {
+  padding: 2%;
+}
+
+/* top part */
+
+.introDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.introLeft {
+  width: 55%;
+}
+
+.intro {
+  background-color: #fcb5ac;
+  border-radius: 0 5% 5% 0;
+  padding: 3%;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.TDAH {
+  padding: 3%;
+  margin-left: 4%;
+}
+
+.treepic {
+  width: 40%;
+}
+
+.treepic img {
+  width: 90%;
+  margin-top: 10%;
+  border-radius: 10% 0 0 10%;
+}
+
+@media (max-width: 57rem){
+  .introDetails {
+    flex-direction: column-reverse;
+    /* align-items: center; */
+    padding-left: 5%;
+  }
+  .introLeft {
+    width: 90%;
+  }
+  .treepic {
+    width: 90%;
+  }
+  .treepic img {
+    width: 100%;
+    margin: 10% 0;
+    border-radius: 0;
+  }
+  .introLeft p, .introLeft li {
+    font-size: 1.2rem;
+  }
+}
+
+/* gallery part */
+
+.gallery {
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.gallery img {
+  width: 25%;
+}
+
+.banner {
+  display: none;
+}
+
+@media (max-width: 57rem){
+  .gallery {
+    display: none;
+  }
+  .banner {
+    display: flex;
+    width: 350px;
+    height: 283.5px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 4%;
+  }
+  .img_box {
+    list-style-type: none;
+    width: 2100px;
+  }
+
+  .banner .img_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-350px);
+  }
+  
+  .img_box li {
+    float: left;
+    list-style: none;
+  }
+  .img_box li img {
+    width: 350px;
+  }
+}
+
+.permet {
+  margin: 0 auto 5% 3%;
+  /* margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5%; */
+}
+
+/* bottom part */
+.bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.picBottom {
+  width: 45%;
+}
+
+.picBottom img {
+  width: 90%;
+  padding-top: 5%;
+  border-radius: 0 10% 10% 0;
+  /* box-shadow: 5px 5px 10px gray; */
+}
+
+.textBottom {
+  width: 45%;
+}
+
+@media (max-width: 57rem){
+  .permet p, .permet li, .textBottom p {
+    font-size: 1.2rem;
+  }
+  .permet {
+    margin-top: 5%;
+  }
+  .bottom {
+    flex-direction: column;
+    padding-left: 2%;
+  }
+  .picBottom{
+    width: 90%;
+  }
+  .picBottom img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .textBottom {
+    width: 90%;
+  }
+}
+
+/* round pink bg */
+.round {
+  position: absolute;
+  background-color: #fcb5ac;
+  bottom: 10%;
+  right: 15%;
+  width: 800px;
+  height: 800px;
+  border-radius: 400px;
+  z-index: -1;
+}
+
+.tarifs {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 3% auto;
+}
+
+.tarifs p {
+  margin-left: 5%;
+}
+
+@media (max-width: 57rem){
+  .tarifs{
+    margin-top: 5%;
+  }
+  .tarifs p {
+    font-size: 1.4rem;
+  }
+
+}

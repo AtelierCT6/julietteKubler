@@ -1,42 +1,106 @@
+@keyframes appear {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translate(-85%);
+	}
+} 
+
+ 
  /* HEADING AREA */
 
  header {
-	height: 180px;
-	padding: 0 3rem;
-	background: #ededed;
-	display: flex;
+		height: 180px;
+		padding: 0 3rem;
+		background: #ededed;
+		display: flex;
   }
   
   #logo {
-	height: 180px;
-	margin-right: 15%;
+		width: 15%;
+		height: 180px;
   }
 	
 	#logo img{
 		height: 100%;
 	}
 
-  header div {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
+  .pcheader {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
   }
   
-  header div h3 {
-	display: none;
+  .pcheader h3 {
+		display: none;
   }
   
   header p {
-	font-size: 2rem;
-	margin-bottom: 0;
-  }
-  
-  header div img {
-	height: 25px;
+		font-size: 2rem;
+		margin-bottom: 0;
   }
 
-	.nav {
+	.link {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+  
+  .link img {
+		height: 25px;
+  }
+
+	.mobileheader, .mobilemenu {
+		display: none;
+	}
+
+	.menu {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		top: 100px;
+		right: -345px;
+		width: 400px;
+		height: 255px;
+		padding: 20px;
+		background-color: #fcb5ac;
+		border-radius: 10% 0 0 10%;
+		box-shadow: -8px 8px 15px grey;
+	}
+
+	.menu div{
+		width: 12%;
+		border-right: 1px solid #25232B;
+	}
+
+	.menu ul{
+		width: 80%;
+	}
+
+	.menu li {
+		margin-bottom: 5%;
+	}
+
+	.menu:hover {
+		animation: appear 1.5s ease-in-out forwards;
+	}
+
+	.menu a:hover{
+		border-bottom: 1px solid #25232B;
+	}
+
+	.menupic {
+		display: none;
+	}
+
+	.active {
+		display: fixed;
+	}
+
+	.nonactive{
 		display: none;
 	}
 
@@ -46,12 +110,50 @@
 		}
 		#logo {
 			margin: 0;
-			margin-right: 10%;
+			margin-right: 28%;
 		}
-		.pcheader {
+		.pcheader, .menu {
 			display: none;
 		}
-		.nav {
+		.mobileheader {
 			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 45%;
+		}
+		.mobileheader img{
+			height: 25px;
+		}
+		.menupic {
+			display: flex;
+			width: 35px;
+			height: 35px;
+			margin-top: 70px;
+		}
+		#smallmenu {
+			position: fixed;
+			top: 115px;
+			left: 50px;
+			width: 300px;
+			height: 350px;
+			padding: 20px;
+			background-color: #fcb5ac;
+			border-radius: 5%;
+			z-index: 5;
+			box-shadow: 0 0 20px #25232B;
+			padding-top: 60px;
+		}
+		#smallmenu li {
+			font-size: 1.5rem;
+			margin-bottom: 10%;
+			border-bottom: 1px solid #25232B;
+		}
+		#close {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			right: 20px;
+			top: 20px;
+			z-index: 9;
 		}
 	}
