@@ -48,8 +48,8 @@ header {
 .nav div {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  margin-bottom: 5%;
+  justify-content: space-evenly;
+  margin-bottom: 3%;
 }
 
 .nav a {
@@ -132,6 +132,7 @@ header {
 .first .myname {
     transform: translateY(80%);
     animation: appear 5s;
+    margin-bottom: 2.5rem;
 }
 
   .mypic {

@@ -3,7 +3,7 @@
 .intro {
   display: flex;
   padding: 3% 5% 5% 10%;
-  /* margin-bottom: 4%; */
+  margin-bottom: 4%;
 }
 
 .intro h1 {
